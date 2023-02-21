@@ -24,7 +24,9 @@
 !cfg/yolov3*.cfg
 
 storage.googleapis.com
-runs/*
+!/pretrained/*
+
+!runs/*
 data/*
 data/images/*
 !data/*.yaml
@@ -36,6 +38,9 @@ data/images/*
 !data/*.sh
 
 !data/FaceDetection
+
+
+
 
 results*.csv
 
@@ -51,7 +56,7 @@ VOC/
 
 # Neural Network weights -----------------------------------------------------------------------------------------------
 *.weights
-*.pt
+#*.pt
 *.pb
 *.onnx
 *.engine
