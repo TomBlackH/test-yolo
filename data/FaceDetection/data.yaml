@@ -1,0 +1,18 @@
+train: data/FaceDetection/train/images
+val: data/FaceDetection/valid/images
+test: data/FaceDetection/test/images
+
+nc: 1
+names: ['faces']
+
+roboflow:
+  workspace: project
+  project: facedetection-jvogw
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/project/facedetection-jvogw/dataset/1
+
+
+#训练
+#python train.py --batch-size 4 --epochs 100 --data data/FaceDetection/data.yaml --weights pretrained/yolov5s.pt
+#python train.py --batch-size 2 --epochs 50 --data data/FaceDetection/data.yaml --weights pretrained/yolov5s.pt
